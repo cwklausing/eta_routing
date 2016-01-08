@@ -1,4 +1,5 @@
 $(document).ready(function(){
+<<<<<<< HEAD
 
     $("#catform").on('submit', submitCats)
 
@@ -41,3 +42,13 @@ function appendDom(data){
         $el.append("<p>" + data[i].username + "</p>");
     }
 }
+=======
+    $.ajax({
+        type: "GET",
+        url: "/kitties",
+        success: function(data){
+            console.log(data);
+        }
+    });
+});
+>>>>>>> fe8d05771cb03b8bd564bafa90cbf5b035c07a19

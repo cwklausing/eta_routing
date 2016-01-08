@@ -10,11 +10,16 @@
   "author": "Scott Bromander",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "angular": "^1.4.8",
     "body-parser": "^1.14.2",
     "express": "^4.13.3",
     "jquery": "^2.1.4",
     "mongoose": "^4.3.4",
+=======
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+>>>>>>> fe8d05771cb03b8bd564bafa90cbf5b035c07a19
     "path": "^0.12.7"
   }
 }

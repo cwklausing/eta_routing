@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+<<<<<<< HEAD
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
@@ -31,5 +32,21 @@ app.use("/cat", cats);
 app.use("/", index);
 
 app.listen(app.get("port"), function(){
+=======
+var path = require('path');
+
+app.set("port", process.env.PORT || 5000);
+
+app.get("/kitties", function(req,res){
+    res.json({message: "meow"});
+});
+
+app.get("/*", function(req,res){
+    var file = req.params[0] || "assets/views/index.html";
+    res.sendFile(path.join(__dirname, "/public/", file));
+});
+
+app.listen(app.set("port", process.env.PORT || 5000), function(){
+>>>>>>> fe8d05771cb03b8bd564bafa90cbf5b035c07a19
     console.log("Listening on port: ", app.get("port"));
 });
